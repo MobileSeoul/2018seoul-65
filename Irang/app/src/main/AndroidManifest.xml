@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="team.gajigo.irang">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/irang_logo"
+        android:label="오늘은아이랑"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
+        <activity android:name=".LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".MapsActivity2" />
+        <activity android:name=".MapsActivity3" />
+        <activity android:name=".MapsActivity4" />
+        <activity android:name=".information.SubActivity" />
+        <activity android:name=".information.TabPagerAdapter" />
+        <activity android:name=".information.TabFragment01" />
+        <activity android:name=".information.TabFragment02" />
+        <activity android:name=".information.TabFragment03" />
+        <activity android:name=".information.TabFragment04" />
+
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAlJ9joiCk_N5O6ogizD6m7AehxlqPTUtY" />
+
+        <!-- <activity -->
+        <!-- android:name=".MapsActivity" -->
+        <!-- android:label="@string/title_activity_maps"></activity> -->
+        <activity android:name=".CourseActivity" />
+        <activity android:name=".course.CourseTabFragment01" />
+        <activity android:name=".course.CourseTabFragment02" />
+        <activity android:name=".course.CourseTabFragment03" />
+        <activity android:name=".course.CourseTabFragment04" />
+        <activity android:name=".CourseTabFragment01"></activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+    </application>
+
+</manifest>

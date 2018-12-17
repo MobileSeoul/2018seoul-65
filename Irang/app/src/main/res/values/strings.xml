@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">irang</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="StringValue">이미지가 열리지 않습니다.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
